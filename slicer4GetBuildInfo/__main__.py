@@ -8,7 +8,7 @@ InfoURLBase = 'http://slicer.kitware.com/midas3/api/json'
 
 
 def getMidasRecordsFromURL():
-    infoURL = '{0}?method={1}'.format(InfoURLBase, InfoURLMethod)
+    infoURL = '{0}?method={1}&productname=Slicer'.format(InfoURLBase, InfoURLMethod)
     info = None
 
     fp = urllib2.urlopen(infoURL)
